@@ -10,21 +10,25 @@
 using namespace std;
 class student
 {public:
-    student(int n,string nam,int ag):num(n),name(nam),age(ag){}
+    student(int n,string nam,int ag,string s,float c):num(n),name(nam),age(ag),sex(s),score(c){}
     void display()
     {
         cout << "num:" << num << endl;
         cout << "name:" << name << endl;
         cout << "age:" << age << endl;
+        cout << "sex:" << sex << endl;
+        cout << "score:" << score << endl;
     }
 private:
     int num;
     string name;
-    int  age;
+    int age;
+    string sex;
+    float score;
 };
 int main()
 {
-    student stud(1001,"wuchao",20);
+    student stud(1001,"wuchao",20,"m",98.9);
     stud.display();
     return 0;
 }
